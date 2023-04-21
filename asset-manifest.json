@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TicketEvent-front/static/css/main.858b9853.css",
+    "main.js": "/TicketEvent-front/static/js/main.af7a60de.js",
+    "index.html": "/TicketEvent-front/index.html",
+    "main.858b9853.css.map": "/TicketEvent-front/static/css/main.858b9853.css.map",
+    "main.af7a60de.js.map": "/TicketEvent-front/static/js/main.af7a60de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.858b9853.css",
+    "static/js/main.af7a60de.js"
+  ]
+}
