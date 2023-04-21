@@ -1,0 +1,200 @@
+.eventpage_container_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.eventpage_display {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+.eventpage_container_info {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.eventpage_container_info p {
+  font-size: 18px;
+  color: rgba(16,0,255,1);
+}
+.eventpage_description_container_part1, .eventpage_description_container_part2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.eventpage_organizer {
+  font-size: 10px;
+}
+
+.eventpage_container_buy {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.eventpage_form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.eventpage_input_container { 
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.eventpage_input_label {
+  color: rgba(16,0,255,1);
+  font: bold;
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.eventpage_input_input {
+  padding: 4px 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.eventpage_button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(16,0,255,1);
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.eventpage_message {
+  color: rgba(16,0,255,1);
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 10px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1700px) { 
+  .eventpage_container_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .eventpage_display {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  .eventpage_container_info {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .eventpage_container_info p {
+    font-size: 18px;
+    color: rgba(16,0,255,1);
+  }
+  .eventpage_description_container_part1, .eventpage_description_container_part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .eventpage_organizer {
+    font-size: 10px;
+  }
+  
+  .eventpage_container_buy {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .eventpage_form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .eventpage_input_container { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .eventpage_input_label {
+    color: rgba(16,0,255,1);
+    font: bold;
+    margin-bottom: 2px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .eventpage_input_input {
+    padding: 4px 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .eventpage_button {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(16,0,255,1);
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .eventpage_message {
+    color: rgba(16,0,255,1);
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 10px
+  }
+}

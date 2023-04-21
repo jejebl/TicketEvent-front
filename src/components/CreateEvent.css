@@ -1,0 +1,178 @@
+.create_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.create_form_container {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 0.25rem;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.create_h3_title {
+  text-align: center;
+  font: bold;
+  color: rgba(16,0,255,1);
+  margin-bottom: 20px;
+}
+.create_input_container {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.create_input_label {
+  color: rgba(16,0,255,1);
+  font: bold;
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.create_input_input {
+  padding: 4px 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.create_date_container {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.create_date_label {
+  color: rgba(16,0,255,1);
+  font: bold;
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.create_date_text {
+  padding: 4px 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.create_message {
+  color: rgba(16,0,255,1);
+  text-align: center;
+}
+
+.create_button_createEvent {
+  font: bold;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(16,0,255,1);
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1700px) { 
+  .create_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+  .create_form_container {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 0.25rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .create_h3_title {
+    text-align: center;
+    font: bold;
+    color: rgba(16,0,255,1);
+    margin-bottom: 20px;
+  }
+  .create_input_container {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .create_input_label {
+    color: rgba(16,0,255,1);
+    font: bold;
+    margin-bottom: 2px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .create_input_input {
+    padding: 4px 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  
+  .create_date_container {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .create_date_label {
+    color: rgba(16,0,255,1);
+    font: bold;
+    margin-bottom: 2px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .create_date_text {
+    padding: 4px 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .create_message {
+    color: rgba(16,0,255,1);
+    text-align: center;
+  }
+  
+  .create_button_createEvent {
+    font: bold;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(16,0,255,1);
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+  }
+}
