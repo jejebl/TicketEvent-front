@@ -41,11 +41,11 @@ const CreateEvent = () => {
             alert("Successfully create your Event!");
             updateMessage("");
             updateFormParams({ name: '', date: '', price: '', ticketCount: ''});
-            window.location.reload();
+            window.location.replace("/createevent")
         }
         catch(e) {
             alert( "Upload error"+e )
-            window.location.reload();
+            window.location.replace("/createevent")
         }
     }
 
@@ -64,7 +64,7 @@ const CreateEvent = () => {
           </div>
           <div className="create_input_container">
               <label className="create_input_label" htmlFor="price">Event Price</label>
-              <input className="create_input_input" id="price" type="number" placeholder="Price" value={formParams.price} onChange={e => updateFormParams({...formParams, price: e.target.value})}></input>
+              <input className="create_input_input" id="price" type="number" placeholder="Price in MATIC" value={formParams.price} onChange={e => updateFormParams({...formParams, price: e.target.value})}></input>
           </div>
           <div className="create_input_container">
               <label className="create_input_label" htmlFor="ticketCount">Event ticket count</label>

@@ -12,7 +12,7 @@ const EventFile = (data) => {
             <div className='eventfile_container_part12'>
               <div className='eventfile_part1'>
                 <p>Name:</p>{data.data.name}
-                <p>Price:</p> {data.data.price + " ETH"}
+                <p>Price:</p> {data.data.price + " MATIC"}
                 <p>TicketCount: </p>{data.data.ticketCount}
               </div>
               <div className='eventfile_part2'>

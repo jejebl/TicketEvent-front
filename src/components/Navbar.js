@@ -43,7 +43,7 @@ const Navbar = () => {
     } else {
       setDefaultAccount(false);
     }
-    window.location.replace("/")
+    window.location.replace("/TicketEvent-front")
   }
 
 

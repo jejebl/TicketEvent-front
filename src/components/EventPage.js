@@ -63,12 +63,11 @@ const EventPage = () => {
   
             alert('You successfully bought the ticket!');
             updateBuyMessage("");
-            window.location.reload();
+            window.location.replace("/YourTicket");
           }
       }
       catch(e) {
           alert("Upload Error"+e)
-          window.location.reload();
       }
   }
 
@@ -90,12 +89,11 @@ const EventPage = () => {
 
           alert('You successfully transfer your ticket!');
           updateTransferMessage("");
-          window.location.reload();
+          window.location.replace("/YourTicket")
         }
     }
     catch(e) {
         alert("Upload Error"+e)
-        window.location.reload();
     }
 }
 
@@ -112,7 +110,7 @@ const EventPage = () => {
                   <p>Name:</p>{data.name}<br></br><br></br>
                   <p>Date: </p> {data.date}<br></br><br></br>
                   <p>My Tickets: </p>{data.myTickets}<br></br><br></br>
-                  <p>Price:</p> {data.price + " ETH"}
+                  <p>Price:</p> {data.price + "MATIC"}
                 </div>
                 <div className='eventpage_description_container_part2'>
                   <p>TokenId: </p> {data.tokenId}<br></br><br></br>
