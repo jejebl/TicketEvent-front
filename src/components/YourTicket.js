@@ -24,7 +24,7 @@ const YourTicket = () => {
     const items = await Promise.all(transaction.map(async i => {
         const myTickets = await contract.getMyTickets(i.tokenId);
         let item;
-        if(myTickets>0){
+        if(myTickets._hex!=='0x00'){
           let price = ethers.utils.formatUnits(i.price.toString(), 'ether');
           var myDate = new Date(i.date*1000);
           myDate = myDate.toLocaleDateString();
@@ -59,16 +59,13 @@ getMyTickets();
       <div className="profile_event_container">
         <h2>Your Tickets</h2>
         <div className="profile_mapevent">
-        {data && data.map((value, index) => {
+        {data.map((value, index) => {
                     if(value!==undefined){
                       return <EventFile data={value} key={index}></EventFile>;
                     } else {
                       return null;
                     }
                 })}
-        </div>
-        <div className="profile_nodata">
-            {data.length === 0 ? "You don't have ticket":""}
         </div>
       </div>
   </div>

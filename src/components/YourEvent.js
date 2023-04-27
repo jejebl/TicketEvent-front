@@ -42,8 +42,11 @@ const YourEvent = () => {
 
 }
 
-if(!dataFetched)
-getMyEvents();
+if(!dataFetched){
+  getMyEvents();
+  console.log(data)
+
+}
 
   return (
     <div className="profile_container">

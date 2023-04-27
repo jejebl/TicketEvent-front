@@ -71,7 +71,7 @@ const EventPage = () => {
           }
       }
       catch(e) {
-          alert("Upload Error"+e)
+          alert("You can't buy a ticket if the event has past!")
           button.disabled = false;
       }
   }
