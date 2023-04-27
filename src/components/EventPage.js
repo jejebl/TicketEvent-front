@@ -45,6 +45,10 @@ const EventPage = () => {
   }
 
   async function buyTicket(tokenId) {
+    
+      let button = document.querySelector('.eventpage_button');
+      button.disabled = true;
+
       try {
           if(quantity>0){
             const ethers = require("ethers");
@@ -63,15 +67,20 @@ const EventPage = () => {
   
             alert('You successfully bought the ticket!');
             updateBuyMessage("");
-            window.location.replace("/YourTicket");
+            window.location.replace("/TicketEvent-front/#/YourTicket");
           }
       }
       catch(e) {
           alert("Upload Error"+e)
+          button.disabled = false;
       }
   }
 
   async function transferTicket(tokenId) {
+    
+    let button = document.querySelector('.eventpage_button');
+    button.disabled = true;
+
     try {
         if(quantity>0 && address!=null){
           const ethers = require("ethers");
@@ -89,11 +98,12 @@ const EventPage = () => {
 
           alert('You successfully transfer your ticket!');
           updateTransferMessage("");
-          window.location.replace("/YourTicket")
+          window.location.replace("/TicketEvent-front/#/YourTicket")
         }
     }
     catch(e) {
         alert("Upload Error"+e)
+        button.disabled = false;
     }
 }
 

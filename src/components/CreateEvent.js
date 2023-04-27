@@ -10,13 +10,16 @@ const CreateEvent = () => {
 
     async function createEvent(e) {
         e.preventDefault();
+        
+        let button = document.querySelector('.create_button_createEvent');
+        button.disabled = true;
 
         try {
             const {name, date, price, ticketCount} = formParams;
         
             //Make sure that none of the fields are empty
             if( !name || !date || !price || !ticketCount) {
-                window.location.replace("/createevent")
+                window.location.replace("/TicketEvent-front/#/createevent")
                 return;
             }
             updateMessage("Creating your event, wait...")
@@ -41,11 +44,11 @@ const CreateEvent = () => {
             alert("Successfully create your Event!");
             updateMessage("");
             updateFormParams({ name: '', date: '', price: '', ticketCount: ''});
-            window.location.replace("/createevent")
+            window.location.replace("/TicketEvent-front/#/createevent")
         }
         catch(e) {
             alert( "Upload error"+e )
-            window.location.replace("/createevent")
+            window.location.replace("/TicketEvent-front/#/createevent")
         }
     }
 

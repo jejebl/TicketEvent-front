@@ -17,7 +17,6 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="*" element={<Events/>}></Route>
-          <Route path="/TicketEvent-front" element={<Events />}/>
           <Route path="/eventPage/:tokenId" element={<EventPage />}/> 
           <Route path="/createevent" element={<CreateEvent />}/>        
           <Route path="/YourEvent" element={<YourEvent />}/> 

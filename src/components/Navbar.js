@@ -55,7 +55,7 @@ const Navbar = () => {
                 
             {defaultAccount && (
                 <li className='nav_li_here'>
-                  <Link to="/TicketEvent-front">Events</Link>
+                  <Link to="/">Events</Link>
                 </li>
             )}
             {defaultAccount && (
