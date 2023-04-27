@@ -37,7 +37,6 @@ const CreateEvent = () => {
             //Pull the deployed contract instance
             let contract = new ethers.Contract(EventJSON.address, EventJSON.abi, signer)
 
-            //Create the NFT
             let transaction = await contract.createEvent(name,newDate,priceTicket,ticketCount)
             await transaction.wait()
 

@@ -61,7 +61,7 @@ const EventPage = () => {
             const salePrice = ethers.utils.parseUnits(data.price, 'ether')
 
             updateBuyMessage("Buying the ticket... Please wait")
-            //run the executeSale function
+            //run the buyTicket function
             let transaction = await contract.buyTicket(tokenId, quantity, {value:quantity*salePrice});
             await transaction.wait();
   
@@ -92,7 +92,7 @@ const EventPage = () => {
           let contract = new ethers.Contract(EventJSON.address, EventJSON.abi, signer);
 
           updateTransferMessage("Transfering the ticket... Please wait")
-          //run the executeSale function
+          //run the transferTicket function
           let transaction = await contract.transferTicket(tokenId, quantity, address);
           await transaction.wait();
 

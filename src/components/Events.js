@@ -35,10 +35,8 @@ const Events = () => {
     const signer = provider.getSigner();
     //Pull the deployed contract instance
     let contract = new ethers.Contract(EventJSON.address, EventJSON.abi, signer)
-    //create an NFT Token
     let transaction = await contract.getAllEvents()
 
-    //Fetch all the details of every NFT from the contract and display
     const items = await Promise.all(transaction.map(async i => {
         const myTickets = await contract.getMyTickets(i.tokenId);
         let price = ethers.utils.formatUnits(i.price.toString(), 'ether');
